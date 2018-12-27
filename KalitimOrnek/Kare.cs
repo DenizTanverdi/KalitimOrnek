@@ -32,7 +32,7 @@ namespace KalitimOrnek
         public double Cevre
         {
             get { return cevre; }
-            set { cevre = kenarUzunlugu * 4; }
+            set { cevre = value; }
         }
 
         /// <summary>
@@ -41,7 +41,7 @@ namespace KalitimOrnek
         public double Alan
         {
             get { return alan; }
-            set { alan = kenarUzunlugu * kenarUzunlugu; }
+            set { alan = value; }
         }
         /// <summary>
         /// Kare sınıfıdır.kenar uzunluğu parametresini alır.
@@ -51,8 +51,12 @@ namespace KalitimOrnek
         {
             
             KenarUzunlugu = kenar;
-            this.Cevre = kenar;
-            this.Alan = kenar;
+            this.Cevre = 4*kenar;
+            this.Alan = kenar*kenar;
+        }
+        public kare()
+        {
+
         }
 
     }
