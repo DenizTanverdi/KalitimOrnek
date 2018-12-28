@@ -13,8 +13,9 @@ namespace KalitimOrnek
         public KarePrizma(int kenar,double h):base(kenar)
         {
             yukseklik = h;
-            this.alan =base.cevre*yukseklik+2* base.alan;
-            this.hacim = base.alan* yukseklik;
+            Hacim = base.Alan * yukseklik;
+            Alan =base.Cevre*yukseklik+2* base.Alan;
+         
             
             
         }

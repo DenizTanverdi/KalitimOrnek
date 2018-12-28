@@ -18,8 +18,8 @@ namespace KalitimOrnek
         public Silindir(double h,double r):base(r)
         {
             Yukseklik = h;
-            hacim = base.alan * yukseklik;
-            alan = 2 * base.alan + base.cevre * yukseklik;
+            Hacim = base.Alan * yukseklik;
+            Alan = 2 * base.Alan + base.Cevre * yukseklik;
         }
 
     }
