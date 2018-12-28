@@ -10,11 +10,11 @@ namespace KalitimOrnek
     {
         double yukseklik;
         public double Yukseklik { get { return yukseklik; } set { yukseklik = value; } }
-        public KarePrizma(double kenar,double h)
+        public KarePrizma(int kenar,double h):base(kenar)
         {
             yukseklik = h;
-            this.alan =4*kenar*yukseklik+2* Math.Pow(kenar, 2);
-            this.hacim = kenar*kenar* yukseklik;
+            this.alan =base.cevre*yukseklik+2* base.alan;
+            this.hacim = base.alan* yukseklik;
             
             
         }

@@ -17,5 +17,9 @@ namespace KalitimOrnek
             this.alan = pi * Math.Pow(yariCap, 2);
             this.cevre = 2 * pi * yariCap;
         }
+        public Daire()
+        {
+
+        }
     }
 }
